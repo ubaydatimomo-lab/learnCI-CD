@@ -1,0 +1,12 @@
+name: Ubz CICD workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntun-latest
+    steps:
+    - name: checkout code
+      uses: actions/checkout@v2
+    - name: I am testing this workflow
+      run: echo Hello everyone!
